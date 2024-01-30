@@ -22,7 +22,7 @@ public class VerifyAndInjectionTest {
     @Test
     public void testCall(){
         when(calculatorService.add(1,1)).thenReturn(1.0);
-        System.out.println(mathApp.testAdd());
+        mathApp.testAdd();
         verify(calculatorService).add(1,1);
     }
 }
